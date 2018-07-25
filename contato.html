@@ -8,14 +8,14 @@
 
       <link rel="stylesheet" href="css/materialize.min.css">
       <link rel="stylesheet" href="retro.css">
-      <link rel="stylesheet" href="retro-home.css">
-
+      <link rel="stylesheet" href="contato.css">
 
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
       <!-- Icons -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     </head>
     <body>
@@ -37,52 +37,43 @@
           </ul>
         </div>
       </nav>
-
-      <section>
-        <div class="row white" id="bloco-1">
-          <div class="container">
-            <div class="col l4 m4 s12">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, diam vel eleifend scelerisque, lectus tellus fringilla tellus,
-                nec dapibus leo ex rutrum magna.
-                Aliquam sodales odio nulla, vitae convallis sem dictum sed. Suspendisse rhoncus dignissim rhoncus.
-                Donec et tortor vitae tortor fringilla malesuada vitae bibendum mi. Suspendisse tincidunt neque at augue facilisis imperdiet. In tempor, nulla et condimentum pulvinar,
-                dui mauris egestas lectus, eu dignissim dolor velit quis ante.
-              </p>
-              <p>
-                Quisque egestas tempor justo, quis molestie nisl ullamcorper semper. Mauris in sapien massa.
-                Nullam commodo velit vel eros porttitor pulvinar. Sed nec placerat arcu. Sed quis gravida arcu.
-              </p>
-            </div>
-            <div class="col l4 m4 s12">
-              <p>
-                Morbi nisi erat, aliquet ac purus vel, vulputate elementum sapien. Etiam eget urna quis est lacinia rutrum.
-                In erat felis, porttitor dignissim turpis rutrum, accumsan egestas purus. Nunc quam mauris, cursus quis libero
-                ut, eleifend malesuada ipsum.
-             </p>
-             <p><span> "Donec commodo arcu mauris, quis feugiat tellus pulvinar ut."</span></p>
-             <p>
-                Cras ullamcorper, nisi non placerat lobortis, est dolor auctor quam, vel sodales odio magna vel justo.
-                Vestibulum ultricies metus at egestas accumsan.
-
-             </p>
-            </div>
-            <div class="col l4 m4 s12">
-              <p>
-                  Donec commodo arcu mauris, quis feugiat tellus pulvinar ut.
-                  Aliquam nisl est, euismod in convallis eget, laoreet vitae metus. Nunc ac consequat ligula, ut mattis ligula.
-                  Morbi mattis, mauris quis accumsan molestie, nunc
-                  risus blandit quam, id convallis elit diam a massa. Curabitur blandit maximus, nec porttitor erat pellentesque ut.
-              </p>
-              <p>
-                Aenean sit amet auctor felis.
-                Maecenas dapibus eu dui nec molestie. Vivamus at dolor nulla. Fusce lorem libero, imperdiet a augue id, ultricies scelerisque urna.
-                Fusce vel quam id massa tempor malesuada.
-              </p>
+      <div class="row center" id="contato">
+        <div class="container">
+          <div class="col l11 m8 s12 offset-m2 white z-depth-3">
+            <h3>Contato</h3>
+            <div class="container">
+              <div class="row">
+               <form class="col s12">
+                   <div class="row">
+                     <div class="input-field col s12">
+                       <input id="nome" type="text" class="validate">
+                       <label for="nome" data-error="wrong" data-success="right">Nome</label>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="input-field col s12">
+                       <input id="nome" type="email" class="validate">
+                       <label for="email">E-mail</label>
+                    </div>
+                   </div>
+                   <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensagem</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row right-align">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">
+                    Enviar
+                    <i class="material-icons">send</i></button>
+                  </div>
+                </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      </div>
       <footer class="page-footer white">
           <div class="container">
             <div class="row">
@@ -113,5 +104,7 @@
             $(".button-collapse").sideNav();
           });
       </script>
+
     </body>
+
 </html>

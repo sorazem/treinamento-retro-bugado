@@ -1,0 +1,10 @@
+body {
+  background-image: url('img/background/ampl.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#contato {
+	margin-top: 10vh;
+}
